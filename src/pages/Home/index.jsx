@@ -225,11 +225,11 @@ const Home = () => {
 
             {/* Right Content - Building Image */}
             <div className="w-1/2 relative">
-              {/* <img
-                src="/images/img_image_5.png"
+              <img
+                src="/images/home.jpeg"
                 alt="Modern building"
-                className="w-full h-auto rounded-lg"
-              /> */}
+                className="w-full h-50 rounded-lg"
+              />
 
               {/* Floating Testimonial Cards */}
               {/* <div className="absolute top-16 right-0 bg-gradient-to-br from-gray-300/50 to-gray-400/50 backdrop-blur-sm border border-gray-300/80 rounded-2xl p-6 w-80 shadow-lg">
