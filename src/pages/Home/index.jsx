@@ -226,9 +226,9 @@ const Home = () => {
             {/* Right Content - Building Image */}
             <div className="w-1/2 relative">
               <img
-                src="/images/home.jpeg"
+                src="/images/building-shield03 1.png"
                 alt="Modern building"
-                className="w-full h-50 rounded-lg"
+                className="w-full h-auto rounded-lg"
               />
 
               {/* Floating Testimonial Cards */}
