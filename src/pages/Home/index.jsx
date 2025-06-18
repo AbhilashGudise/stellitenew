@@ -226,7 +226,7 @@ const Home = () => {
             {/* Right Content - Building Image */}
             <div className="w-1/2 relative">
               <img
-                src="/images/building-shield03 1.png"
+                src="/images/img_image_6.png"
                 alt="Modern building"
                 className="w-full h-auto rounded-lg"
               />
