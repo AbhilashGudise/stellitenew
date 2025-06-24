@@ -14,8 +14,8 @@ const About = () => {
   ];
 
   const awards = [
-    { year: '2021', title: '"Sustainable Design Award" from (USGBC)' },
-    { year: '2020', title: '"Builder of the Year" award' },
+    { year: '2021', title: 'Stelliteworks' },
+    { year: '2020', title: 'Stelliteworks' },
     { year: '2022', title: '"Top 50 Fastest-Growing Companies"' }
   ];
 
@@ -355,49 +355,39 @@ const teamMembers = [
       </div>
 
       {/* Call to Action Section */}
-      <div className="relative w-full h-[402px] bg-global-4 rounded-2xl mx-16 my-20">
-        <div 
-          className="absolute left-0 top-0 w-[365px] h-[375px] bg-cover bg-center"
-          style={{ backgroundImage: 'url(/images/img_vector_375x365.png)' }}
-        ></div>
-        <div 
-          className="absolute right-0 top-3 w-[363px] h-[390px] bg-cover bg-center"
-          style={{ backgroundImage: 'url(/images/img_vector_390x363.png)' }}
-        ></div>
-        
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-16">
-          <div className="mb-12">
-            <div className="flex items-center justify-center gap-4 mb-4">
-              <h2 className="text-global-3 font-clash-display font-semibold text-[73px] leading-[90px]">
-                Let's
-              </h2>
-              <h2 className="text-global-3 font-clash-display font-semibold text-[73px] leading-[90px]">
-                Build
-              </h2>
-              <img 
-                src="/images/img_vector_black_900.svg" 
-                alt="Build icon"
-                className="w-12 h-23"
-              />
-              <h2 className="text-global-3 font-clash-display font-semibold text-[73px] leading-[90px]">
-                Something
-              </h2>
+          <section className="bg-global-4 py-20 rounded-2xl mx-16 mb-20 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/images/img_vector_375x365.png"
+            alt="Background pattern left"
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 w-auto h-full opacity-20"
+          />
+          <img
+            src="/images/img_vector_390x363.png"
+            alt="Background pattern right"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 w-auto h-full opacity-20"
+          />
+        </div>
+        <div className="relative z-10 text-center space-y-8">
+          <div className="space-y-4">
+            <div className="flex items-center justify-center space-x-4">
+              <h2 className="text-7xl font-clash-display font-semibold text-global-3">Let's</h2>
+              <h2 className="text-7xl font-clash-display font-semibold text-global-3">Build</h2>
+              <img src="/images/img_vector_black_900.svg" alt="Arrow" className="w-12 h-23" />
+              <h2 className="text-7xl font-clash-display font-semibold text-global-3">Something</h2>
             </div>
-            <div className="flex items-center justify-center gap-4">
-              <h2 className="text-global-3 font-clash-display font-semibold text-[73px] leading-[90px]">
+            <div className="flex items-center justify-center space-x-4">
+              <h2 className="text-7xl font-clash-display font-semibold text-global-3">
                 Extraordinary
               </h2>
-              <h2 className="text-global-3 font-clash-display font-semibold text-[73px] leading-[90px]">
-                Together
-              </h2>
+              <h2 className="text-7xl font-clash-display font-semibold text-global-3">Together</h2>
             </div>
           </div>
-          
-          <Button variant="primary" size="md" to="/projects">
+          <Button variant="primary" className="bg-global-2 border border-primary">
             View our projects
           </Button>
         </div>
-      </div>
+      </section>
 
       <Footer />
     </div>

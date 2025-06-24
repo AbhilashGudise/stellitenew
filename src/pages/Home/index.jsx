@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../../components/common/Header';
 import Button from '../../components/ui/Button';
+import Footer from '@/components/common/Footer';
 
 const Home = () => {
   const [currentProjectSlide, setCurrentProjectSlide] = useState(0);
@@ -20,7 +21,8 @@ const Home = () => {
     },
     {
       id: 2,
-      image: 'https://i.pinimg.com/736x/4d/7b/10/4d7b103424b6f8b4baa89a8eda726c09.jpg',
+      // image: 'https://i.pinimg.com/736x/4d/7b/10/4d7b103424b6f8b4baa89a8eda726c09.jpg', 
+      image: '/images/sap_1.png',
       title: 'SAP Solutions',
       description:
         'Comprehensive SAP services including EWM, S/4HANA migration, and ongoing support for enterprise digital transformation.',
@@ -43,28 +45,31 @@ const Home = () => {
     Residential: [
       {
         id: 1,
-        image: 'https://i.pinimg.com/736x/07/d8/1b/07d81bf19264db8187850432e4b93454.jpg',
+        // image: 'https://i.pinimg.com/736x/07/d8/1b/07d81bf19264db8187850432e4b93454.jpg', 
+        image:'/images/image_04.png',
         title: 'IT Staffing & Recruiting',
         description:
           'End-to-end IT talent acquisition and workforce solutions, powered by data-driven search and AI-enabled vetting.',
       },
       {
         id: 2,
-        image: ' https://i.pinimg.com/736x/31/5e/7d/315e7dd66d47a2fc0029aa7c3f3445c1.jpg',
+        image: ' https://i.pinimg.com/736x/31/5e/7d/315e7dd66d47a2fc0029aa7c3f3445c1.jpg', 
         title: 'SAP Solutions',
         description:
           'Comprehensive SAP services including EWM, S/4HANA migration, and ongoing support for enterprise transformation.',
       },
       {
         id: 3,
-        image: 'https://i.pinimg.com/736x/73/56/11/735611de2fe8637bde882dae24112fce.jpg ',
+        // image: 'https://i.pinimg.com/736x/73/56/11/735611de2fe8637bde882dae24112fce.jpg ',
+        image:'/images/image_02.png',
         title: 'IT Consulting',
         description:
           'Strategic guidance for enterprise software integration, digital transformation, and process automation.',
       },
       {
         id: 4,
-        image: 'https://i.pinimg.com/736x/e6/8f/9e/e68f9ebf7402675444908f6bb184fb8c.jpg',
+        // image: 'https://i.pinimg.com/736x/e6/8f/9e/e68f9ebf7402675444908f6bb184fb8c.jpg', 
+         image:'/images/image_03.png',
         title: 'Software Development & SaaS',
         description:
           'Custom web/mobile app development, cloud-native SaaS platforms, and automation tools for modern businesses.',
@@ -174,7 +179,7 @@ const Home = () => {
       <div className="flex items-center space-x-1">
         {[...Array(5)].map((_, index) => (
           <div key={index} className="relative">
-            <div className="w-4 h-4 border border-yellow-500 rounded-sm shadow-sm">
+            <div className="w-4 h-4 border border-yellow-500 rounded-sm ">
               {index < rating && (
                 <img
                   src="/images/img_star_7.png"
@@ -202,7 +207,7 @@ const Home = () => {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-global-1 bg-opacity-80"></div>
+        <div className="absolute inset-0  bg-opacity-80"></div>
         <div className="relative z-10 flex items-center min-h-screen">
           <div className="container mx-auto px-16 flex items-center justify-between">
             {/* Left Content */}
@@ -216,7 +221,7 @@ const Home = () => {
                 with data-driven talent and enterprise solutions.
               </p>
               <div className="flex space-x-6">
-                <Button variant="primary" className="bg-global-4 text-global-3 shadow-custom">
+                <Button variant="primary" className="bg-global-4 text-global-3 ">
                   Start your Transformation
                 </Button>
                 <Button variant="secondary">View Our Projects</Button>
@@ -226,7 +231,7 @@ const Home = () => {
             {/* Right Content - Building Image */}
             <div className="w-1/2 relative">
               <img
-                src="/images/img_image_6.png"
+                src="/images/technology_3.png"
                 alt="Modern building"
                 className="w-full h-auto rounded-lg"
               />
@@ -407,7 +412,7 @@ const Home = () => {
                     </div>
                     <Button
                       variant="primary"
-                      className="w-full bg-global-4 text-global-3 shadow-custom"
+                      className="w-full bg-global-4 text-global-3 "
                     >
                       View
                     </Button>
@@ -745,191 +750,7 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-
-      <footer className="bg-global-1 py-20">
-        <div className="container mx-auto px-16">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
-            {/* Logo and Newsletter */}
-            <div className="md:col-span-1 space-y-6">
-              <div className="flex items-center space-x-3">
-                <img
-                  src="/images/img_vector.svg"
-                  alt="Stellite Works logo"
-                  className="w-7 h-7 rounded-sm"
-                />
-                <h3 className="text-xl font-satoshi font-bold text-global-5">Stellite Works</h3>
-              </div>
-              <div className="space-y-4">
-                <input
-                  type="email"
-                  placeholder="Subscribe for IT & SAP insights"
-                  className="w-full px-4 py-3 bg-transparent border border-secondary rounded-lg text-global-1 placeholder-global-1 focus:outline-none focus:border-global-3"
-                />
-              </div>
-            </div>
-
-            {/* Navigation Links */}
-            <div className="md:col-span-4">
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div className="space-y-6">
-                  <h4 className="text-xl font-satoshi font-medium text-global-1">Navigation</h4>
-                  <div className="space-y-4">
-                    <a
-                      href="/"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      Home
-                    </a>
-                    <a
-                      href="/services"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      Services
-                    </a>
-                    <a
-                      href="/testimonials"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      Testimonials
-                    </a>
-                    <a
-                      href="/faq"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      FAQ's
-                    </a>
-                    <a
-                      href="/terms"
-                      className="block text-sm font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      Terms & Conditions
-                    </a>
-                  </div>
-                </div>
-
-                <div className="space-y-6">
-                  <h4 className="text-xl font-satoshi font-medium text-global-1">About Us</h4>
-                  <div className="space-y-4">
-                    <a
-                      href="/story"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      Our Story
-                    </a>
-                    <a
-                      href="/values"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      Our Values
-                    </a>
-                    <a
-                      href="/team"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      Our Team
-                    </a>
-                  </div>
-                </div>
-
-                <div className="space-y-6">
-                  <h4 className="text-xl font-satoshi font-medium text-global-1">Expertise</h4>
-                  <div className="space-y-4">
-                    <a
-                      href="/sap"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      SAP Solutions
-                    </a>
-                    <a
-                      href="/it-staffing"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      IT Staffing
-                    </a>
-                    <a
-                      href="/software-development"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      Software Development
-                    </a>
-                    <a
-                      href="/consulting"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      IT Consulting
-                    </a>
-                  </div>
-                </div>
-
-                <div className="space-y-6">
-                  <h4 className="text-xl font-satoshi font-medium text-global-1">Contact Us</h4>
-                  <div className="space-y-4">
-                    <a
-                      href="/contact"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      Contact Form
-                    </a>
-                    <a
-                      href="/offices"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      Our Offices
-                    </a>
-                    <a
-                      href="mailto:info@stelliteworks.com"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      info@stelliteworks.com
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom Footer */}
-          <div className="bg-secondary py-6 flex items-center justify-between">
-            <p className="text-sm font-satoshi font-medium text-global-1">
-              ©2025 Stellite Works. All Rights Reserved.
-            </p>
-            <div className="flex space-x-2">
-              <a
-                href="https://www.linkedin.com/company/stelliteworks"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-13 h-9 bg-global-2 border border-primary rounded-lg flex items-center justify-center">
-                  <img src="/images/img_icon.svg" alt="LinkedIn" className="w-5 h-5" />
-                </div>
-              </a>
-              <a href="https://twitter.com/stelliteworks" target="_blank" rel="noopener noreferrer">
-                <div className="w-13 h-9 bg-global-2 border border-primary rounded-lg flex items-center justify-center">
-                  <img src="/images/img_icon_gray_200.svg" alt="Twitter" className="w-5 h-5" />
-                </div>
-              </a>
-              <a
-                href="https://facebook.com/stelliteworks"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-13 h-9 bg-global-2 border border-primary rounded-lg flex items-center justify-center">
-                  <img
-                    src="/images/img_icon_gray_200_20x20.svg"
-                    alt="Facebook"
-                    className="w-5 h-5"
-                  />
-                </div>
-              </a>
-              <a href="https://stelliteworks.com" target="_blank" rel="noopener noreferrer">
-                <div className="w-13 h-9 bg-global-2 border border-primary rounded-lg flex items-center justify-center">
-                  <img src="/images/img_icon_20x20.svg" alt="Website" className="w-5 h-5" />
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+     <Footer />
     </div>
   );
 };

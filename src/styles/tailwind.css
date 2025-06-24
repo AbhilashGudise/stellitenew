@@ -8,7 +8,13 @@
     --global-bg-1: #020100;
     --global-bg-2: #161514;
     --global-bg-3: #201f1f;
-    --global-bg-4: #ff5200;
+    /* Original color */
+    /* --global-bg-4: #ff5200;  */
+    /* Alternative color for global-bg-4 */
+    /* --global-bg-4: #ff510078; */
+     --global-bg-4: #fe5f1578;
+    /* --global-bg-4: #ff5200; */
+    /* --global-bg-4: #021344; */
     --global-text-1: #8d8d8c;
     --global-text-2: #c0c0bf;
     --global-text-3: #f0f0f0;
