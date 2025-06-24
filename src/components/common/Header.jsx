@@ -11,7 +11,7 @@ const Header = () => {
     { label: 'About Us', path: '/about' },
     { label: 'Projects', path: '/projects' },
     { label: 'Services', path: '/services' },
-    { label: 'News', path: '/news' }
+    { label: 'News', path: '/news' },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -21,8 +21,8 @@ const Header = () => {
       <div className="flex items-center justify-between h-full px-16">
         {/* Logo Section */}
         <div className="flex items-center cursor-pointer" onClick={() => navigate('/')}>
-          <img 
-            src="/images/img_vector.svg" 
+          <img
+            src="/images/img_vector.svg"
             alt="Pinnacle logo"
             className="w-7 h-7 rounded-sm mr-3"
           />
@@ -38,7 +38,7 @@ const Header = () => {
         <nav className="flex items-center space-x-8">
           {navigationItems.map((item) => (
             <div key={item.path}>
-              {item.label === 'Home' && isActive(item.path) ? (
+              {isActive(item.path) ? (
                 <Button variant="primary" size="md" to={item.path}>
                   {item.label}
                 </Button>
@@ -55,7 +55,7 @@ const Header = () => {
         </nav>
 
         {/* Contact Button */}
-        <Button variant="secondary" size="md" to="/contact">
+        <Button variant={isActive('/contact') ?  'secondary': 'primary' } size="md" to="/contact">
           Contact us
         </Button>
       </div>

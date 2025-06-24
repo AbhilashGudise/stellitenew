@@ -12,9 +12,9 @@ const Footer = () => {
       title: 'Navigation',
       links: [
         { label: 'Home', path: '/' },
-        { label: 'Properties', path: '/properties' },
-        { label: 'Testimonials', path: '/testimonials' },
-        { label: 'FAQ\'s', path: '/faqs' }
+        { label: 'About', path: '/about' },
+        { label: 'Projects', path: '/projects' },
+        { label: 'services', path: '/services' }
       ]
     },
     {
@@ -58,91 +58,7 @@ const Footer = () => {
   ];
 
   return (
-    // <footer className="w-full bg-global-1">
-    //   {/* Main Footer Content */}
-    //   <div className="px-16 py-20">
-    //     <div className="flex justify-between items-start">
-    //       {/* Logo and Newsletter Section */}
-    //       <div className="flex flex-col w-80">
-    //         {/* Logo */}
-    //         <div className="flex items-center mb-15">
-    //           <img 
-    //             src="/images/img_vector.svg" 
-    //             alt="Pinnacle logo"
-    //             className="w-7 h-7 rounded-sm mr-3"
-    //           />
-    //           <span className="text-global-3 font-satoshi font-bold text-3xl leading-10">
-    //             Stelliteworks
-    //           </span>
-    //         </div>
 
-    //         {/* Newsletter Subscription */}
-    //         <Dropdown 
-    //           placeholder="Enter Your Email"
-    //           onSubmit={handleEmailSubmit}
-    //           className="w-full h-14"
-    //         />
-    //       </div>
-
-    //       {/* Navigation Links */}
-    //       <div className="flex space-x-32">
-    //         {navigationSections.map((section, index) => (
-    //           <div key={index} className="flex flex-col">
-    //             <h3 className="text-global-1 font-satoshi font-medium text-xl leading-7 mb-6">
-    //               {section.title}
-    //             </h3>
-    //             <div className="flex flex-col space-y-4">
-    //               {section.links.map((link, linkIndex) => (
-    //                 <a
-    //                   key={linkIndex}
-    //                   href={link.path}
-    //                   className="text-global-3 font-satoshi font-medium text-base leading-6 hover:text-global-5 transition-colors"
-    //                 >
-    //                   {link.label}
-    //                 </a>
-    //               ))}
-    //             </div>
-    //           </div>
-    //         ))}
-    //       </div>
-    //     </div>
-
-    //     {/* Terms & Conditions */}
-    //     <div className="mt-8">
-    //       <a
-    //         href="/terms"
-    //         className="text-global-3 font-satoshi font-medium text-sm leading-5 hover:text-global-5 transition-colors"
-    //       >
-    //         Terms & Conditions
-    //       </a>
-    //     </div>
-    //   </div>
-
-    //   {/* Bottom Footer */}
-    //   <div className="bg-global-3 px-16 py-6">
-    //     <div className="flex items-center justify-between">
-    //       <span className="text-global-1 font-satoshi font-medium text-sm leading-5">
-    //         @2024 Stelliteworks. All Rights Reserved.
-    //       </span>
-
-    //       {/* Social Media Icons */}
-    //       <div className="flex space-x-4">
-    //         {socialIcons.map((icon, index) => (
-    //           <button
-    //             key={index}
-    //             className="w-13 h-9 bg-global-2 border border-primary rounded-lg flex items-center justify-center hover:bg-global-3 transition-colors"
-    //           >
-    //             <img 
-    //               src={icon.src} 
-    //               alt={icon.alt}
-    //               className="w-5 h-5"
-    //             />
-    //           </button>
-    //         ))}
-    //       </div>
-    //     </div>
-    //   </div>
-    // </footer>
 <footer className="bg-global-1 py-20">
         <div className="container mx-auto px-16">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
@@ -177,29 +93,30 @@ const Footer = () => {
                     >
                       Home
                     </a>
+                     <a
+                      href="/about"
+                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
+                    >
+                      About Us
+                    </a>
+                    <a
+                      href="/projects"
+                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
+                    >
+                      Projects
+                    </a>
+                   
                     <a
                       href="/services"
                       className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
                     >
-                      Services
+                      Service
                     </a>
                     <a
-                      href="/testimonials"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      Testimonials
-                    </a>
-                    <a
-                      href="/faq"
-                      className="block text-base font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
-                    >
-                      FAQ's
-                    </a>
-                    <a
-                      href="/terms"
+                      href="/news"
                       className="block text-sm font-satoshi font-medium text-global-3 hover:text-global-5 transition-colors"
                     >
-                      Terms & Conditions
+                      News
                     </a>
                   </div>
                 </div>
