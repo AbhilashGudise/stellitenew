@@ -207,20 +207,20 @@ const Home = () => {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0  bg-opacity-80"></div>
-        <div className="relative z-10 flex items-center min-h-screen">
-          <div className="container mx-auto px-16 flex items-center justify-between">
+        <div className="absolute inset-0 bg-opacity-80"></div>
+        <div className="relative z-10 flex flex-col-reverse md:flex-row items-center min-h-screen">
+          <div className="container mx-auto px-4 md:px-16 flex flex-col-reverse md:flex-row items-center justify-between">
             {/* Left Content */}
-            <div className="w-1/2 space-y-8">
-              <h1 className="text-7xl font-clash-display font-semibold leading-tight text-global-3">
+            <div className="w-full md:w-1/2 space-y-6 md:space-y-8 mb-10 md:mb-0">
+              <h1 className="text-3xl md:text-7xl font-clash-display font-semibold leading-tight text-global-3">
                 Stellite Works IT Talent & SAP Solutions
               </h1>
-              <p className="text-xl font-satoshi text-global-2 leading-8 max-w-2xl">
+              <p className="text-base md:text-xl font-satoshi text-global-2 leading-7 md:leading-8 max-w-2xl">
                 U.S.-based IT consulting and staffing firm specializing in SAP, software
                 development, and digital transformation. Serving clients across the U.S. and India
                 with data-driven talent and enterprise solutions.
               </p>
-              <div className="flex space-x-6">
+              <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
                 <Button variant="primary" className="bg-global-4 text-global-3 ">
                   Start your Transformation
                 </Button>
@@ -229,55 +229,12 @@ const Home = () => {
             </div>
 
             {/* Right Content - Building Image */}
-            <div className="w-1/2 relative">
+            <div className="w-full md:w-1/2 relative">
               <img
                 src="/images/technology_3.png"
                 alt="Modern building"
                 className="w-full h-auto rounded-lg"
               />
-
-              {/* Floating Testimonial Cards */}
-              {/* <div className="absolute top-16 right-0 bg-gradient-to-br from-gray-300/50 to-gray-400/50 backdrop-blur-sm border border-gray-300/80 rounded-2xl p-6 w-80 shadow-lg">
-                <div className="flex items-start space-x-4">
-                  <img
-                    src="/images/img_ellipse_6_51x52.png"
-                    alt="Client"
-                    className="w-11 h-11 rounded-full"
-                  />
-                  <div className="flex-1">
-                    <RatingStars />
-                    <p className="text-sm font-satoshi font-medium text-global-4 mt-2 leading-5">
-                      Stellite Works delivered outstanding SAP consultants who transformed our IT
-                      operations.
-                    </p>
-                    <p className="text-xs font-satoshi font-bold text-global-4 mt-2">
-                      Emily J. Smith | CIO, Global Manufacturing Inc.
-                    </p>
-                  </div>
-                </div>
-              </div> */}
-
-              {/* <div className="absolute bottom-32 -left-8 bg-gradient-to-br from-gray-300/50 to-gray-400/50 backdrop-blur-sm border border-gray-300/80 rounded-2xl p-4 w-80 shadow-lg">
-                <div className="flex items-start space-x-4">
-                  <img
-                    src="/images/img_ellipse_6.png"
-                    alt="Client"
-                    className="w-13 h-12 rounded-full"
-                  />
-                  <div className="flex-1">
-                    <div className="flex items-center space-x-2 mb-2">
-                      <RatingStars />
-                    </div>
-                    <p className="text-sm font-satoshi font-medium text-global-4 leading-5">
-                      Stellite Works is my go-to partner for IT staffing and SAP solutions. Their
-                      expertise is unmatched.
-                    </p>
-                    <p className="text-xs font-satoshi font-bold text-global-4 mt-2">
-                      James | CTO, Tech Innovations
-                    </p>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
@@ -292,20 +249,19 @@ const Home = () => {
             className="absolute right-0 top-1/2 transform -translate-y-1/2 w-auto h-full opacity-20"
           />
         </div>
-        <div className="relative z-10 container mx-auto px-16">
+        <div className="relative z-10 container mx-auto px-4 md:px-16">
           <div className="text-center max-w-4xl mx-auto space-y-8">
             <div className="space-y-4">
               <div className="flex items-center justify-center space-x-4">
-                <h2 className="text-9xl font-clash-display font-semibold text-global-3">
-                  Comprehensive <br />
+                <h2 className="text-4xl sm:text-6xl lg:text-8xl font-clash-display font-semibold text-global-3 text-center break-words leading-tight">
+                  Comprehensive
+                  <br className="block md:hidden" />
                   Technology
                 </h2>
-                {/* <div className="w-30 h-12 bg-global-1 border-8 border-global-1 rounded-6 shadow-sm"></div> */}
-                {/* <h2 className="text-9xl font-clash-display font-semibold text-global-3">
-                  Technology
-                </h2> */}
               </div>
-              <h2 className="text-9xl font-clash-display font-semibold text-global-3">Solutions</h2>
+              <h2 className="text-4xl sm:text-6xl lg:text-8xl font-clash-display font-semibold text-global-3 text-center break-words leading-tight">
+                Solutions
+              </h2>
             </div>
             <p className="text-lg font-satoshi font-medium text-global-5 leading-7 max-w-3xl mx-auto">
               {/* With a commitment to excellence and a focus on innovation, we've established ourselves as a leader in the real estate and construction industry. */}
@@ -350,7 +306,7 @@ const Home = () => {
 
       {/* Featured Projects Section */}
       <section className="bg-global-1 py-20">
-        <div className="container mx-auto px-16">
+        <div className="container mx-auto px-4 md:px-16">
           <div className="flex items-center justify-between mb-16">
             <div className="flex items-center space-x-4 max-w-4xl">
               <img
@@ -448,7 +404,7 @@ const Home = () => {
 
       {/* Quality Service Section */}
       <section className="bg-global-1 py-20">
-        <div className="container mx-auto px-16">
+        <div className="container mx-auto px-4 md:px-16">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-4 mb-6">
               <h2 className="text-6xl font-clash-display font-semibold text-global-3">
@@ -469,23 +425,24 @@ const Home = () => {
           </div>
 
           {/* Service Tabs */}
-          <div className="flex justify-center mb-16">
-            <div className="bg-global-2 rounded-lg p-2 flex space-x-2">
-              {['Recruit', 'Expertise in SAP Staffing', 'Services', 'Development'].map((tab) => (
-                <button
-                  key={tab}
-                  onClick={() => setActiveServiceTab(tab)}
-                  className={`px-6 py-3 rounded-lg font-satoshi font-medium text-sm transition-colors ${
-                    activeServiceTab === tab
-                      ? 'bg-global-1 text-global-3 border border-primary'
-                      : 'bg-global-2 text-global-3 border border-primary'
-                  }`}
-                >
-                  {tab}
-                </button>
-              ))}
-            </div>
-          </div>
+          {/* Service Tabs */}
+<div className="flex justify-center mb-16">
+  <div className="bg-global-2 rounded-lg p-2 flex overflow-x-auto flex-nowrap space-x-2 w-full max-w-3xl">
+    {['Recruit', 'Expertise in SAP Staffing', 'Services', 'Development'].map((tab) => (
+      <button
+        key={tab}
+        onClick={() => setActiveServiceTab(tab)}
+        className={`min-w-max px-6 py-3 rounded-lg font-satoshi font-medium text-sm transition-colors ${
+          activeServiceTab === tab
+            ? 'bg-global-1 text-global-3 border border-primary'
+            : 'bg-global-2 text-global-3 border border-primary'
+        }`}
+      >
+        {tab}
+      </button>
+    ))}
+  </div>
+</div>
 
           {/* Service Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -520,7 +477,7 @@ const Home = () => {
 
       {/* Client Testimonials Section */}
       <section className="bg-global-1 py-20">
-        <div className="container mx-auto px-16">
+        <div className="container mx-auto px-4 md:px-16">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-4 mb-6">
               <h2 className="text-6xl font-clash-display font-semibold text-global-3">
@@ -599,7 +556,7 @@ const Home = () => {
 
       {/* Latest News Section */}
       <section className="bg-global-1 py-20">
-        <div className="container mx-auto px-16">
+        <div className="container mx-auto px-4 md:px-16">
           <div className="flex items-center justify-between mb-16">
             <div className="flex items-center space-x-4 max-w-4xl">
               <img src="/images/img_vector_38x38.svg" alt="Icon" className="w-10 h-10" />
@@ -687,7 +644,7 @@ const Home = () => {
 
       {/* FAQ Section */}
       <section className="bg-global-1 py-20">
-        <div className="container mx-auto px-16">
+        <div className="container mx-auto px-4 md:px-16">
           <div className="flex items-center space-x-4 mb-16">
             <img src="/images/img_vector_1.svg" alt="Icon" className="w-10 h-10 rounded-lg" />
             <h2 className="text-6xl font-clash-display font-semibold text-global-3">
@@ -728,25 +685,33 @@ const Home = () => {
             className="absolute right-0 top-1/2 transform -translate-y-1/2 w-auto h-full opacity-20"
           />
         </div>
-        <div className="relative z-10 text-center space-y-8">
-          <div className="space-y-4">
-            <div className="flex items-center justify-center space-x-4">
-              <h2 className="text-7xl font-clash-display font-semibold text-global-3">Let's</h2>
-              <h2 className="text-7xl font-clash-display font-semibold text-global-3">Build</h2>
-              <img src="/images/img_vector_black_900.svg" alt="Arrow" className="w-12 h-23" />
-              <h2 className="text-7xl font-clash-display font-semibold text-global-3">Something</h2>
-            </div>
-            <div className="flex items-center justify-center space-x-4">
-              <h2 className="text-7xl font-clash-display font-semibold text-global-3">
-                Extraordinary
-              </h2>
-              <h2 className="text-7xl font-clash-display font-semibold text-global-3">Together</h2>
-            </div>
-          </div>
-          <Button variant="primary" className="bg-global-2 border border-primary">
-            View our projects
-          </Button>
-        </div>
+        <div className="relative z-10 text-center space-y-8 px-2 overflow-x-hidden">
+  <div className="space-y-2">
+    <div className="flex flex-col md:flex-row items-center justify-center md:space-x-4 space-y-2 md:space-y-0">
+      <h2 className="text-3xl sm:text-5xl md:text-7xl font-clash-display font-semibold text-global-3 text-center break-words">
+        Let's
+      </h2>
+      <h2 className="text-3xl sm:text-5xl md:text-7xl font-clash-display font-semibold text-global-3 text-center break-words">
+        Build
+      </h2>
+      <img src="/images/img_vector_black_900.svg" alt="Arrow" className="w-8 md:w-12 h-8 md:h-23" />
+      <h2 className="text-3xl sm:text-5xl md:text-7xl font-clash-display font-semibold text-global-3 text-center break-words">
+        Something
+      </h2>
+    </div>
+    <div className="flex flex-col md:flex-row items-center justify-center md:space-x-4 space-y-2 md:space-y-0">
+      <h2 className="text-3xl sm:text-5xl md:text-7xl font-clash-display font-semibold text-global-3 text-center break-words">
+        Extraordinary
+      </h2>
+      <h2 className="text-3xl sm:text-5xl md:text-7xl font-clash-display font-semibold text-global-3 text-center break-words">
+        Together
+      </h2>
+    </div>
+  </div>
+  <Button variant="primary" className="bg-global-2 border border-primary mt-4">
+    View our projects
+  </Button>
+</div>
       </section>
 
       {/* Footer */}
